@@ -33,6 +33,7 @@ void vib(uint16_t pin_out, float level){
             usleep(SEG_SIZE);
         }
     }
+    gpio.SetGPIOValue(pin_out,0);// to make sure the vibrator is off
     auto stop = high_resolution_clock::now();
     auto duration = duration_cast<microseconds>(stop - start);
     std::cout << "Time taken by function: "
