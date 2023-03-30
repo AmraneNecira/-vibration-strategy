@@ -52,6 +52,8 @@ float adjustLevel(float level){
         printf("vib with 25\n");
         return level_25;
     }
+    else{
+        return 0;}
 }
 
 #endif //DEFAULT_STRATEGY_V2_VIB_H
